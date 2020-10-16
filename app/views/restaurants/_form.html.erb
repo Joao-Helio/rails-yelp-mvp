@@ -1,0 +1,28 @@
+<div class="m-3">
+  <%= simple_form_for (@restaurant) do |f| %>
+    <p>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </p>
+
+    <p>
+      <%= f.label :category %>
+      <%= f.text_field :category %>
+    </p>
+
+    <p>
+      <%= f.label :address %>
+      <%= f.text_field :address %>
+    </p>
+
+    <p>
+      <%= f.label :phone_number %>
+      <%= f.text_field :phone_number %>
+    </p>
+
+    <p>
+      <%= f.button :submit, "Submit", class: "btn btn-primary" %>
+    </p>
+
+  <% end %>
+</div>
